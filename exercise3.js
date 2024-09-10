@@ -17,8 +17,7 @@ class Book {
   }
 
   addDiscount(discount) {
-    let test = (100 - discount) / 100;
-    this.#price = this.#price * test;
+    this.#price = (this.#price * (100 - discount)) / 100;
   }
 
   get price() {
